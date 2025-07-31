@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        btnGreet.onclick = function(){
+    let userInput = document.getElementById("userInput");
+    letdisPlayText  = document.getElementById('userinput');
+    let btnGreet = document.getElementById('btnGreet');
+
+    userInput = parseInt(userInput.value);
+    console.log(userInput);
+
+    if (userInput < 12){
+          displayText.innerHTML = 'Good Morning!';
+    }
+    else{
+        displayText.innerHTML = 'Good Afternoon!';
+    }
+
+       
+};
+    </script>
+    <title>lesson of js</title>
+</head>
+<body>
+    <h1>Javascript lesson </h1>
+    <label for="userInput">Enter currect time in hour only!</label>
+    <input type="text" id="userInput" size="5">o'clock
+    <input type="button" id="btnGreet" value="greet">
+    <div id="displayText"></div>
+    <hr>
+    <script src="index.js"></script>
+</body>
+</html>
